@@ -38,7 +38,6 @@ func main() {
 	fmt.Print("Enter student name : ")
 	scanner.Scan()
 	name = scanner.Text()
-	fmt.Println("Student : ", name)
 
 	for i := 0; i < 3; i++ {
 
@@ -72,8 +71,12 @@ func main() {
 		return
 	}
 
+	fmt.Println("\nStudent:", name)
+	fmt.Println("Mark 1:", marks[0])
+	fmt.Println("Mark 2:", marks[1])
+	fmt.Println("Mark 3:", marks[2])
 	total := CalculateTotal(marks)
-	fmt.Println("Total Marks : ", total)
+	fmt.Println("\nTotal Marks : ", total)
 
 	average := float64(total) / 3
 	fmt.Printf("Average Marks : %.2f\n", average)
