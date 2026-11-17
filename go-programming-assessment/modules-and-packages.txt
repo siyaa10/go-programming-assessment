@@ -1,0 +1,23 @@
+Modules and Packages in Go
+
+In Go programming, modules and packages are used to organize and manage code.
+They help developers structure their projects and make the code easier to understand,
+  maintain and reuse.
+
+Modules
+
+A module is a collection of related Go packages that are managed together. 
+Every Go project generally starts with a module.The go.mod file is used to define
+ the module name and manage the dependencies required by the project.
+
+In this assessment, I created a module named go-programming-assessment using the go mod init command.
+This created the go.mod file in my project folder.
+
+Packages
+
+A package is a way of grouping related Go code. It allows us to organize functions, structures,
+ methods and other code elements. Every Go source file must belong to a package.
+
+In my project, I have used the main package for the Go files.
+ This allows the different files in the same package to access and use functions and structures
+defined in one another. The main package is also used to create an executable Go application.
